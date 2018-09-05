@@ -1109,7 +1109,7 @@ print("\nxmodel\n", np.transpose(xmodel), "\nymodel\n", np.transpose(ymodel))
 
 print("\nMODEL FIT OUTPUT")
 print("================")
-plot_landmarks("./input_img1.jpg", lmn, xmodel, ymodel)
+plot_landmarks(1, lmn, xmodel, ymodel)
 
 #
 # Hardcoded output from MATLAB
@@ -1155,7 +1155,7 @@ for i in range(xlocal.shape[0]):
 
 print("LOCAL MAXIMA OUTPUT")
 print("===================")
-plot_landmarks("./input_img1.jpg", lmn, xlocal, ylocal)
+plot_landmarks(1, lmn, xlocal, ylocal)
 
 #5) Determine the final coordinates
 # Refine the local maxima to sub-pixel accuracy and determine the weighted
@@ -1208,4 +1208,4 @@ for i in range(0, xlocal.shape[0]):
 
 print("FINAL OUTPUT")
 print("============")
-plot_landmarks("./input_img1.jpg", lmn, xfinal, yfinal)
+plot_landmarks(1, lmn, xfinal, yfinal)
